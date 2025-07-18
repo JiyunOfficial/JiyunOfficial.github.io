@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 *{
@@ -10,7 +8,7 @@
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
-
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root{
@@ -44,7 +42,11 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    width: 100%;
+  
+  
 }
+
 
 .logo{
     font-size: 3rem;
@@ -66,6 +68,11 @@ nav a{
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
     
+}
+
+nav{
+    flex-shrink: 0;
+
 }
 
 nav a:hover,
@@ -94,8 +101,14 @@ nav a.active{
         font-size: 2rem;
     
     }
+
+    
+    
     
 }
+
+    
+
 
 @media(max-width:400px){
     .container{
@@ -150,6 +163,10 @@ span{
     box-shadow: 0 0 25px solid #b74b4b;
     cursor: pointer;
     transition: 0.2s linear;
+    user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .home-img img:hover{
@@ -183,7 +200,7 @@ h2{
     cursor: pointer;
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
-                0 0 100px var(--main-color);
+                0 0 100px var(--main-color)
 }
 
 
@@ -252,7 +269,14 @@ h2{
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
+    /* display: inline-block;
+  width: 44rem; 
+  white-space: nowrap;
+  overflow: hidden; */
+    
+    
 }
+
 
 .typing-text span{
     position: relative;
@@ -399,13 +423,14 @@ textarea::placeholder{
     }
 
     .home .home-content h3{
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
 
     .home-content h1{
         font-size: 5rem;
     }
 
+    
     .home-img img{
         width: 70vw;
         margin-top: 4rem;
@@ -423,6 +448,11 @@ textarea::placeholder{
     .about-me h2{
         margin-top: 7rem;
     }
+
+    
+}
+
+
 
     
 }
