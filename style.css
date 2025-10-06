@@ -35,7 +35,7 @@ body {
   width: 100%;
   min-height: 100vh; /* 🔥 Stretch if content is longer */
   overflow-x: hidden;
-  background-color: white;
+  background-color: transparent;
   color: white;
 }
 
@@ -466,3 +466,4 @@ textarea::placeholder{
   }
   
 }
+
